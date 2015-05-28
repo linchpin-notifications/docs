@@ -34,7 +34,8 @@ LinchPin's notifications API will automatically wrap these configuration schema'
 
 {% highlight javascript %}
 {
-  "title": "email code command schema",
+  "title": "Send an Email",
+  "description": "Sends an Email using LinchPin's infrastructure",
   "LpConfig": "NotificationConfiguration",
   "type": "object",
   "properties": {
@@ -48,10 +49,53 @@ LinchPin's notifications API will automatically wrap these configuration schema'
     },
     "command": {
       "enum": [
-        "code"
+        "sendEmail"
       ]
     },
-    "config": "ResourceNotFound"
+    "config": {
+      "title": "Send an Email",
+      "description": "Sends an Email using LinchPin's infrastructure",
+      "properties": {
+        "email": {
+          "type": "object",
+          "title": "Email Definition",
+          "description": "Config for sending an email",
+          "LpConfig": "Notifications/email",
+          "properties": {
+            "recipients": {
+              "title": "Email",
+              "description": "Config for storing email or email groups",
+              "LpConfig": "Email",
+              "oneOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    ".lorem": "email"
+                  }
+                },
+                {
+                  "type": "string",
+                  ".lorem": "email"
+                }
+              ]
+            },
+            "body": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipients",
+            "body",
+            "subject"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
   },
   "required": [
     "notification",
