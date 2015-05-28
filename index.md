@@ -7,8 +7,8 @@ permalink: /
 ## Writing a new Notification
 
 LinchPin Notifications have a few components:
-* A commands.json file that lists and describes the `commands` the notification supports
-* A notification.json file that describes the notification, gives it a logo, and adds it to our app for users to choose.
+* A <span class="badge">commands.json</span> file that lists and describes the `commands` the notification supports
+* A <span class="badge">notification.json</span> file that describes the notification, gives it a logo, and adds it to our app for users to choose.
 
 ### commands.json file
 
