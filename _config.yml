@@ -7,8 +7,8 @@ url: "http://docs.linchpin.io/notifications"
 author:  
   name: LinchPin, Inc
   email: docs@linchpin.io  
-  github: linchpinio
-  twitter: linchpin  
+  github: linchpin-notifications
+  twitter: linchpinio
 
 gems: ["emoji_for_jekyll","jekyll-mentions"]
 
