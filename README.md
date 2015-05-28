@@ -1,2 +1,0 @@
-# docs
-LinchPin Notifications Documentation
