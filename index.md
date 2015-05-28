@@ -16,7 +16,7 @@ Example commands.json configuration file:
 {% gist 9cb479365e50e1003ed4 %}
 
 ### notification.json file
-{% highlight javascript %}
+{% highlight javascript linenos %}
 {
     "name": "email",
     "label": "Email",
