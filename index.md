@@ -13,53 +13,7 @@ LinchPin Notifications have a few components:
 ### Commands.json file
 
 Example commands.json configuration file:
-```javascript
-{
-  "sendEmail":{
-    "title":"Send an Email",
-    "description":"Sends an Email using LinchPin's infrastructure",
-    "properties":{
-      "email": {
-        "$ref":"#/definitions/email"
-      }
-    }
-  },
-  "sendEmailHandlebars":{
-    "title":"Send an Email using a HandleBars template",
-    "description":"Sends an Email using LinchPin's infrastructure. The body variable is a HandlerBars template and it renders event data passed in.",
-    "properties":{
-      "email": {
-        "$ref":"#/definitions/email"
-      }
-    }
-  },
-  ".definitions":{
-    "email": {
-      "type": "object",
-      "title": "Email Definition",
-      "description": "Config for sending an email",
-      "LpConfig": "Notifications/email",
-      "properties": {
-        "recipients": {
-          "$ref": "../Email"
-        },
-        "body": {
-          "type": "string"
-        },
-        "subject": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "recipients",
-        "body",
-        "subject"
-      ],
-      "additionalProperties": false
-    }
-  }
-}
-```
+{% gist 9cb479365e50e1003ed4 %}
 <div class="alert alert-danger"><b>Warning!</b> Including an id will replace default behavior. </div>
 
 ## Write some docs @justjico !
