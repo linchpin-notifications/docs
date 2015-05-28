@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Integrations Documentation
+title: Notifications Documentation
 permalink: /
 ---
 
@@ -15,8 +15,3 @@ echo $msg;
 
 
 Testing writing `something` ...
-
-Test commits
-
-
-Adding some content here, and then change it, and change it again!
