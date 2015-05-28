@@ -1,8 +1,8 @@
 # Site settings
-title: LinchPin Integrations Documentation
-description: "Integrations documentation"
-baseurl: "http://docs.linchpin.io/integrations"
-url: "http://docs.linchpin.io/integrations"
+title: LinchPin Notifications Documentation
+description: "Notifications documentation"
+baseurl: "http://docs.linchpin.io/notifications"
+url: "http://docs.linchpin.io/notifications"
 
 author:  
   name: LinchPin, Inc
@@ -24,4 +24,4 @@ kramdown:
 rss_path: feed.xml
 categories_path: categories
 tags_path: tags
-BASE_PATH: /integrations
+BASE_PATH: /notifications
