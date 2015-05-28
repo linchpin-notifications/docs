@@ -16,8 +16,18 @@ Example commands.json configuration file:
 {% gist 9cb479365e50e1003ed4 %}
 
 ### notification.json file
-{% gist 287c11df9e353562dab3 %}
-
+{% highlight javascript %}
+{
+    "name": "email",
+    "label": "Email",
+    "description": "Email notification",
+    "private": true,
+    "form_options": null,
+    "is_oauth": false,
+    "logo": "//linchpin-web-assets.s3.amazonaws.com/v1/notifications/email/email-logo.png",
+    "server_notification": true
+}
+{% endhighlight %}
 
 <div class="alert alert-danger"><b>Warning!</b> Including an id will replace default behavior. </div>
 
