@@ -13,7 +13,7 @@ LinchPin Notifications have a few components:
 ### Commands.json file
 
 Example commands.json configuration file:
-```json
+```
 {
   "sendEmail":{
     "title":"Send an Email",
