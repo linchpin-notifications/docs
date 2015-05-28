@@ -1,2 +1,2 @@
 # docs
-LinchPin Notifications documentation
+LinchPin Notifications Documentation

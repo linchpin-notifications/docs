@@ -1,0 +1,27 @@
+# Site settings
+title: LinchPin Integrations Documentation
+description: "Integrations documentation"
+baseurl: "http://docs.linchpin.io/integrations"
+url: "http://docs.linchpin.io/integrations"
+
+author:  
+  name: LinchPin, Inc
+  email: docs@linchpin.io  
+  github: linchpinio
+  twitter: linchpin  
+
+gems: ["emoji_for_jekyll","jekyll-mentions"]
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+kramdown:
+  input: GFM
+
+#Theme config
+rss_path: feed.xml
+categories_path: categories
+tags_path: tags
+BASE_PATH: /integrations
