@@ -10,10 +10,15 @@ LinchPin Notifications have a few components:
 * A commands.json file that lists and describes the `commands` the notification supports
 * A notification.json file that describes the notification, gives it a logo, and adds it to our app for users to choose.
 
-### Commands.json file
+### commands.json file
 
 Example commands.json configuration file:
 {% gist 9cb479365e50e1003ed4 %}
+
+### notification.json file
+{% gist 287c11df9e353562dab3 %}
+
+
 <div class="alert alert-danger"><b>Warning!</b> Including an id will replace default behavior. </div>
 
 ## Write some docs @justjico !
